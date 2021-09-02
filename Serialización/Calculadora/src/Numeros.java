@@ -2,16 +2,16 @@ package Calculadora;
 
 import java.io.Serializable;
 
-public class Numbers implements Serializable{
+public class Numeros implements Serializable{
 
     private float num1;
     private float num2;
     private float resp;
     private String operacion;
     
-    public Numbers(){}
+    public Numeros(){}
     
-    public Numbers(float num1, float num2, float resp, String operacion) {
+    public Numeros(float num1, float num2, float resp, String operacion) {
         this.num1 = num1;
         this.num2 = num2;
         this.operacion = operacion;

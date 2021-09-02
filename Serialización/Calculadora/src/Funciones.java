@@ -10,15 +10,15 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
-public class Botones {
+public class Funciones {
 
     private File archivo = new File("Datos.dat");
     private static ObjectInputStream entrada;
     private static ObjectOutputStream salida;
-    ArrayList<Numbers> listaOperaciones = new ArrayList();
+    ArrayList<Numeros> listaOperaciones = new ArrayList();
     
     public void agregarOraciones(float num1, float num2, float resultado, String op) throws IOException{
-        Numbers n = new Numbers(num1, num2, resultado, op);
+        Numeros n = new Numeros(num1, num2, resultado, op);
         listaOperaciones.add(n);
         Guardar();
     }
@@ -39,7 +39,7 @@ public class Botones {
         ObjectInputStream entrada = new ObjectInputStream(fi);
         listaOperaciones = (ArrayList)entrada.readObject();
         
-        for(Numbers nums : listaOperaciones){
+        for(Numeros nums : listaOperaciones){
             JOptionPane.showMessageDialog(null, nums.getNum1() + nums.getOperacion() + nums.getNum2() + " = " + nums.getResp() );
         }
         

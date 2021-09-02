@@ -7,12 +7,12 @@ import javax.swing.JOptionPane;
 
 public class index extends javax.swing.JFrame {
 
-    float num1;
-    float num2;
+    float numero1;
+    float numero2;
     String operando = "";
 
-    Numbers n = new Numbers();
-    Botones f = new Botones();
+    Numeros n = new Numeros();
+    Funciones f = new Funciones();
 
     public index() {
         initComponents();
@@ -220,7 +220,7 @@ public class index extends javax.swing.JFrame {
                 .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
@@ -233,19 +233,20 @@ public class index extends javax.swing.JFrame {
                                     .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButton14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
-                                    .addComponent(jButton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
-                                    .addComponent(jButton11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
-                                    .addComponent(jButton5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addGap(12, 12, 12)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jButton19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -274,30 +275,34 @@ public class index extends javax.swing.JFrame {
                             .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton22))
                         .addGap(32, 32, 32)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton21)
-                            .addComponent(jButton18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton20))
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jButton21)
+                                .addComponent(jButton18)
+                                .addComponent(jButton20)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
-                            .addComponent(jButton2)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton5))
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jButton1)
+                                .addComponent(jButton2)
+                                .addComponent(jButton5)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton4)
-                            .addComponent(jButton3)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton6))
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jButton4)
+                                .addComponent(jButton3)
+                                .addComponent(jButton6)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton15)
-                            .addComponent(jButton9)
-                            .addComponent(jButton10)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton11))
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jButton15)
+                                .addComponent(jButton9)
+                                .addComponent(jButton10)
+                                .addComponent(jButton11)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton17)
@@ -339,14 +344,14 @@ public class index extends javax.swing.JFrame {
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         if(Float.parseFloat(jTextField1.getText().toString()) <= 0){
-            JOptionPane.showMessageDialog(null, "Solo se puede sacar raiz cuadrarda a numero mayores a 0");
+            JOptionPane.showMessageDialog(null, "Únicamente puedes obtener la raíz cuadrada de números que sean mayores a 0");
         }else{
             try{
                 double res = Math.sqrt(Float.parseFloat(jTextField1.getText().toString()));
                 jTextField1.setText(Double.toString(res));
             }catch(Exception e){
                 jTextField1.setText("0");
-                JOptionPane.showMessageDialog(null, "Ocurrio un error..." + e.getMessage());
+                JOptionPane.showMessageDialog(null, "Chin, ha ocurrido un error." + e.getMessage());
             }
         }
     }//GEN-LAST:event_jButton20ActionPerformed
@@ -366,9 +371,9 @@ public class index extends javax.swing.JFrame {
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         if (jTextField1.getText().length() > 0) {
-            num1 = Float.parseFloat(jTextField1.getText().toString());
+            numero1 = Float.parseFloat(jTextField1.getText().toString());
         }
-        if (num1 == 0.0f) {
+        if (numero1 == 0.0f) {
             jTextField1.setText("0");
         } else {
             jTextField1.setText(jTextField1.getText() + "0");
@@ -395,9 +400,9 @@ public class index extends javax.swing.JFrame {
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         if (jTextField1.getText().length() > 0) {
-            num1 = Float.parseFloat(jTextField1.getText().toString());
+            numero1 = Float.parseFloat(jTextField1.getText().toString());
         }
-        if (num1 == 0.0f) {
+        if (numero1 == 0.0f) {
             jTextField1.setText("3");
         } else {
             jTextField1.setText(jTextField1.getText() + "3");
@@ -406,9 +411,9 @@ public class index extends javax.swing.JFrame {
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         if (jTextField1.getText().length() > 0) {
-            num1 = Float.parseFloat(jTextField1.getText().toString());
+            numero1 = Float.parseFloat(jTextField1.getText().toString());
         }
-        if (num1 == 0.0f) {
+        if (numero1 == 0.0f) {
             jTextField1.setText("2");
         } else {
             jTextField1.setText(jTextField1.getText() + "2");
@@ -417,9 +422,9 @@ public class index extends javax.swing.JFrame {
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         if (jTextField1.getText().length() > 0) {
-            num1 = Float.parseFloat(jTextField1.getText().toString());
+            numero1 = Float.parseFloat(jTextField1.getText().toString());
         }
-        if (num1 == 0.0f) {
+        if (numero1 == 0.0f) {
             jTextField1.setText("1");
         } else {
             jTextField1.setText(jTextField1.getText() + "1");
@@ -460,13 +465,13 @@ public class index extends javax.swing.JFrame {
             break;
             case "pot":
             if(n.getNum2() <= 0){
-                JOptionPane.showMessageDialog(null, "No se permiten de potencias negativas");
+                JOptionPane.showMessageDialog(null, "No es permitido el uso de potencias negativas.");
             }else{
                 try{
                     res = (float) Math.pow(n.getNum1(), n.getNum2());
                     jTextField1.setText(Float.toString(res));
                 }catch(Exception e){
-                    JOptionPane.showMessageDialog(null, "Ocurrio un error..." + e.getMessage());
+                    JOptionPane.showMessageDialog(null, "Chin, ha ocurrido un error." + e.getMessage());
                 }
             }
             break;
@@ -475,16 +480,16 @@ public class index extends javax.swing.JFrame {
         try{
             f.agregarOraciones(n.getNum1(), n.getNum2(), res, operando);
         }catch(Exception e){
-            JOptionPane.showMessageDialog(null, "Error..." + e.getMessage());
+            JOptionPane.showMessageDialog(null, "ERROR." + e.getMessage());
         }
 
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         if (jTextField1.getText().length() > 0) {
-            num1 = Float.parseFloat(jTextField1.getText().toString());
+            numero1 = Float.parseFloat(jTextField1.getText().toString());
         }
-        if (num1 == 0.0f) {
+        if (numero1 == 0.0f) {
             jTextField1.setText("6");
         } else {
             jTextField1.setText(jTextField1.getText() + "6");
@@ -493,9 +498,9 @@ public class index extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         if (jTextField1.getText().length() > 0) {
-            num1 = Float.parseFloat(jTextField1.getText().toString());
+            numero1 = Float.parseFloat(jTextField1.getText().toString());
         }
-        if (num1 == 0.0f) {
+        if (numero1 == 0.0f) {
             jTextField1.setText("9");
         } else {
             jTextField1.setText(jTextField1.getText() + "9");
@@ -504,9 +509,9 @@ public class index extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         if (jTextField1.getText().length() > 0) {
-            num1 = Float.parseFloat(jTextField1.getText().toString());
+            numero1 = Float.parseFloat(jTextField1.getText().toString());
         }
-        if (num1 == 0.0f) {
+        if (numero1 == 0.0f) {
             jTextField1.setText("5");
         } else {
             jTextField1.setText(jTextField1.getText() + "5");
@@ -515,9 +520,9 @@ public class index extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         if (jTextField1.getText().length() > 0) {
-            num1 = Float.parseFloat(jTextField1.getText().toString());
+            numero1 = Float.parseFloat(jTextField1.getText().toString());
         }
-        if (num1 == 0.0f) {
+        if (numero1 == 0.0f) {
             jTextField1.setText("4");
         } else {
             jTextField1.setText(jTextField1.getText() + "4");
@@ -526,9 +531,9 @@ public class index extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         if (jTextField1.getText().length() > 0) {
-            num1 = Float.parseFloat(jTextField1.getText().toString());
+            numero1 = Float.parseFloat(jTextField1.getText().toString());
         }
-        if (num1 == 0.0f) {
+        if (numero1 == 0.0f) {
             jTextField1.setText("8");
         } else {
             jTextField1.setText(jTextField1.getText() + "8");
@@ -537,9 +542,9 @@ public class index extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if (jTextField1.getText().length() > 0) {
-            num1 = Float.parseFloat(jTextField1.getText().toString());
+            numero1 = Float.parseFloat(jTextField1.getText().toString());
         }
-        if (num1 == 0.0f) {
+        if (numero1 == 0.0f) {
             jTextField1.setText("7");
         } else {
             jTextField1.setText(jTextField1.getText() + "7");
