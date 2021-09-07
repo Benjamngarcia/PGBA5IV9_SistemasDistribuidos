@@ -24,7 +24,7 @@ public class Funciones {
     private File archivo = new File("Datos.dat");
     private static ObjectInputStream entrada;
     private static ObjectOutputStream salida;
-    ArrayList<Oracion> listaOraciones = new ArrayList();
+    ArrayList<Frase> listaOraciones = new ArrayList();
 
     public void Invertir(String oracion) throws IOException {
 
@@ -50,8 +50,8 @@ public class Funciones {
 
     public void agregarOracion(String oracion) throws IOException {
 
-        Oracion ora = new Oracion(oracion);
-        listaOraciones.add(ora);
+        Frase oration = new Frase(oracion);
+        listaOraciones.add(oration);
         Guardar();
         JOptionPane.showMessageDialog(null, "La frase ha sido guardada");
 
@@ -77,12 +77,12 @@ public class Funciones {
 
         int caso = 0;
 
-        for (Oracion p : listaOraciones) {
+        for (Frase p : listaOraciones) {
 
             caso++;
             JOptionPane.showMessageDialog(null, " \n"
                     + "Case #" + caso + ": \n"
-                    + p.getOracion());
+                    + p.getFrase());
 
         }
 

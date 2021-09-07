@@ -11,22 +11,22 @@ package invertircadena;
  */
 import java.io.Serializable;
 
-public class Oracion implements Serializable{
+public class Frase implements Serializable{
 
-    private String oracion;
+    private String frase;
     
-    public Oracion(){}
+    public Frase(){}
 
-    public Oracion(String oracion) {
-        this.oracion = oracion;
+    public Frase(String frase) {
+        this.frase = frase;
     }
 
-    public String getOracion() {
-        return oracion;
+    public String getFrase() {
+        return frase;
     }
 
-    public void setOracion(String oracion) {
-        this.oracion = oracion;
+    public void setFrase(String frase) {
+        this.frase = frase;
     }
     
 }
