@@ -4,27 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SUBNETEO DE REDES</title>
-    <link rel="stylesheet" type="text/css" href="css/DIseño.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 <body>
     <div class="container">
-        <div class="cont_perfil">
+        <div class="container_datos">
             <h1 class="sub">SUBNETEO DE REDES</h1>
-            <input type="input_text" class="boxi" id="ip" name="ip" placeholder="Ingrese la ip" />
-            <input type="input_text" class="boxi" id="subred" placeholder="Numero de subredes que deseas"/>
-            <input type="button" class="boxi" value="Calcular" onclick="Funciones()" />
+            <input type="text" class="datos" id="ip" name="ip" placeholder="INSERTE LA IP" />
+            <input type="text" class="datos" id="subred" placeholder="NÚMERO DE SUBREDES QUE DESEAS"/>
+            <input type="button" class="datos1" value="CALCULAR" onclick="FuncionesSubn()" />
         </div>
-        <div class="cont_perfil">
-            <h2>IP en binario</h2>
+        <div class="container_resultado">
+            <p>IP BINARIO:</p>
             <input type="text" class="dis" id="ipbin" readonly />
-            <h2>Tipo de clase</h2>
-            <input type="text" class="dis" id="clase" readonly />
-            <h2>Máscara de subred adaptada</h2>
-            <input type="text" class="dis" id="maskadap" readonly />
-            <h2>Máscara de subred en binario</h2>
+            <p>MÁSCARA DE SUBRED EN BINARIO: </p>
             <input type="text" class="dis" id="maskbin" readonly />
+            <p>TIPO DE CLASE: </p>
+            <input type="text" class="dis" id="clase" readonly />
+            <p>MÁSCARA DE SUBRED: </p>
+            <input type="text" class="dis" id="maskadap" readonly />
         </div>
-        <br />
         <div>
             <table id="tabla1" class="table"></table>
         </div>

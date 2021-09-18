@@ -1,15 +1,15 @@
-function Funciones() {
+function FuncionesSubn() {
 
 	var cont = 0;
 	var clas = 0;
 	var ip = document.getElementById('ip').value;
 	var subr = parseInt(document.getElementById('subred').value);
 	if (ip == "") {
-		alert("Porfavor ingresa una IP");
+		alert("Por favor, ingresa una dirección IP.");
 		return false;
 	}
 	if (document.getElementById('subred').value == "") {
-		alert("No puede haber 0 subredes");
+		alert("No se puede hacer con 0 subredes");
 		return false;
 	}
 	for (var i = 0; i < ip.length; i++) {
@@ -146,7 +146,7 @@ function Funciones() {
 	con = Math.pow(2, bits);
 	cont = 0;
 	conC = 0;
-	tabla1.innerHTML = "<thead><td class='td'>N. de subred</td><td class='td'>IP inicial</td><td class='td'>IP inicial en binario</td><td class='td'>IP final</td><td class='td'>IP final en binario</td><td class='td'>Hosts disponibles</td></thead>";
+	tabla1.innerHTML = "<thead><td class='td'>NO. DE SUBRED</td><td class='td'>IP INICIAL</td><td class='td'>IP EN BINARIO</td><td class='td'>IP FINAL</td><td class='td'>IP FINAL EN BINARIO</td><td class='td'>HOSTS</td></thead>";
 
 	for (let index = 0; index < con; index++) {
 		var tr = document.createElement("tr");
