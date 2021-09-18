@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+
+*{
+    font-family: 'Source Code Pro', monospace;
+    color: #42c920;
+}
+body{
+    background: black;
+    margin: auto;
+    text-align: center;
+}
+.container{
+    background: red;
+    width: 50%;
+    height: 90%;
+    margin: auto;
+}
+.dis{
+	border: 2px solid red;
+	border-radius: 3px;
+}
+
+
+
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    background: rgb(83, 226, 119) url("gradient.gif") bottom left repeat-x;
+    color: rgb(0, 0, 0);
+    width: 50%;
+    height: 90%;
+    margin: auto;
+ }
+ td, th {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+ }

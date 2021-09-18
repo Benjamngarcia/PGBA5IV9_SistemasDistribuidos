@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUBNETEO DE REDES</title>
+    <link rel="stylesheet" type="text/css" href="css/DIseño.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="cont_perfil">
+            <h1 class="sub">SUBNETEO DE REDES</h1>
+            <input type="input_text" class="boxi" id="ip" name="ip" placeholder="Ingrese la ip" />
+            <input type="input_text" class="boxi" id="subred" placeholder="Numero de subredes que deseas"/>
+            <input type="button" class="boxi" value="Calcular" onclick="Funciones()" />
+        </div>
+        <div class="cont_perfil">
+            <h2>IP en binario</h2>
+            <input type="text" class="dis" id="ipbin" readonly />
+            <h2>Tipo de clase</h2>
+            <input type="text" class="dis" id="clase" readonly />
+            <h2>Máscara de subred adaptada</h2>
+            <input type="text" class="dis" id="maskadap" readonly />
+            <h2>Máscara de subred en binario</h2>
+            <input type="text" class="dis" id="maskbin" readonly />
+        </div>
+        <br />
+        <div>
+            <table id="tabla1" class="table"></table>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/Llenar.js"></script>
+</body>
+
+</html>
