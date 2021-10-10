@@ -1,4 +1,4 @@
-function FuncionesSubn() {
+function FuncionesSub() {
 
 	var cont = 0;
 	var clas = 0;
